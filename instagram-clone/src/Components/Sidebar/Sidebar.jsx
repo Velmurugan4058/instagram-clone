@@ -13,7 +13,7 @@ import { AuthContext } from '../../context/AuthContext';
 function Sidebar() {
     const menuItems = [
         { name: "Home", icon: <HomeIcon fontSize="medium" />,path:"/" },
-        { name: "Search", icon: <SearchIcon fontSize="medium" /> ,path:"#" },
+        { name: "Search", icon: <SearchIcon fontSize="medium" /> ,path:"/search" },
         { name: "Explore", icon: <ExploreIcon fontSize="medium" />,path:"#" },
         { name: "Reels", icon: <SlideshowIcon fontSize="medium" /> ,path:"#"},
         { name: "Message", icon: <ChatIcon fontSize="medium" />,path:"/message" },

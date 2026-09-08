@@ -7,6 +7,12 @@ function RightSidebar() {
         { id: 2, username: "mr.lee",subtitles:"New to Instagram" },
         { id: 3, username: "melwin",subtitles:"Suggested for you" },
         { id: 4, username: "seeman",subtitles:"Followed by manivel" },
+        { id: 5, username: "nurath",subtitles:"Followed by melwin" },
+        { id: 6, username: "nethaji",subtitles:"Followed by seeman" },
+        { id: 7, username: "itz me srinivishnu",subtitles:"Followed by vishnusrini" },
+        { id: 8, username: "vikram",subtitles:"Followed by vishnu" },
+        { id: 9, username: "dr.pyscho",subtitles:"Followed by nuraht" },
+        { id: 10, username: "abi",subtitles:"Followed by nethaji" },
     ]
 
    

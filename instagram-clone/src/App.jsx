@@ -10,6 +10,7 @@ import LoginPage from './pages/LoginPage/LoginPage'
 import { AuthProvider } from './context/AuthContext'
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute'
 import MessagePage from './MessagePage/MessagePage'
+import SearchPage from './pages/SearchPage/SearchPage'
 
 function App(){
    return(
@@ -24,7 +25,7 @@ function App(){
       <Route path='/message' element={<MessagePage/>}></Route>
       <Route path='/signup' element={<SignupPage/>}></Route>
       <Route path='/login' element={<LoginPage/>}></Route>
-      
+      <Route path='/search' element={<SearchPage/>}></Route>
     </Routes>
     </AuthProvider>
     
