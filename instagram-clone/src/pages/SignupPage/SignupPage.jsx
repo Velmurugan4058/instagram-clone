@@ -23,7 +23,7 @@ function SignupPage() {
                 // we will build the login page next
             }
             else{
-                alert(data.message);
+                alert(data.error);
             }
         }
         catch(error){

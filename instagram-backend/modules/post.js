@@ -11,6 +11,7 @@ const postSchema = new mongoose.Schema({
     },
     caption:{
         type:String,
+        default:"",
         required:true
     },
     likes:{
@@ -20,7 +21,13 @@ const postSchema = new mongoose.Schema({
     comments:[{
         text:String,
         username:String
-    }]
+    }],
+    createdAt:{
+        type:Date,
+        default:Date.now
+    },
+    
+
 
 },{
     timestamps:true//Automatically adds "CreatedAt" and "UpdatedAt" times!

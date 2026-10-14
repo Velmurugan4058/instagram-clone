@@ -19,13 +19,14 @@ function LoginPage() {
             const data = await response.json();
 
             if (response.ok) {
+                localStorage.setItem("token",data.token);
                 login(data.user);
                 alert("Login Successfully! Welcome Back.")
                 window.location.href = "/";//instantly redirects to homepage
 
             }
             else {
-                alert(data.message);
+                alert(data.error);
             }
         } catch (error) {
             console.log("Login error:", error)

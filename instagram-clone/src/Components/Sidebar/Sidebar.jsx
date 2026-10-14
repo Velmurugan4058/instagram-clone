@@ -5,23 +5,23 @@ import SearchIcon from '@mui/icons-material/Search';
 import ExploreIcon from '@mui/icons-material/Explore'
 import SlideshowIcon from '@mui/icons-material/Slideshow';
 import ChatIcon from '@mui/icons-material/Chat';
-import FavoriteBorderIcon  from '@mui/icons-material/FavoriteBorder';
-import AddBoxIcon  from '@mui/icons-material/AddBox';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import AddBoxIcon from '@mui/icons-material/AddBox';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { AuthContext } from '../../context/AuthContext';
 
 function Sidebar() {
     const menuItems = [
-        { name: "Home", icon: <HomeIcon fontSize="medium" />,path:"/" },
-        { name: "Search", icon: <SearchIcon fontSize="medium" /> ,path:"/search" },
-        { name: "Explore", icon: <ExploreIcon fontSize="medium" />,path:"#" },
-        { name: "Reels", icon: <SlideshowIcon fontSize="medium" /> ,path:"#"},
-        { name: "Message", icon: <ChatIcon fontSize="medium" />,path:"/message" },
-        { name: "Notifications", icon: <FavoriteBorderIcon fontSize="medium" />,path:"#" },
-        { name: "Create", icon: <AddBoxIcon fontSize="medium" /> ,path:"/create"},
-        { name: "Profile", icon: <AccountCircleIcon fontSize="medium" /> ,path:"/profile"},
- ];
- const {logout} = useContext(AuthContext)
+        { name: "Home", icon: <HomeIcon fontSize="medium" />, path: "/" },
+        { name: "Search", icon: <SearchIcon fontSize="medium" />, path: "/search" },
+        { name: "Explore", icon: <ExploreIcon fontSize="medium" />, path: "/explore" },
+        { name: "Reels", icon: <SlideshowIcon fontSize="medium" />, path: "/reels" },
+        { name: "Message", icon: <ChatIcon fontSize="medium" />, path: "/message" },
+        { name: "Notifications", icon: <FavoriteBorderIcon fontSize="medium" />, path: "notifications" },
+        { name: "Create", icon: <AddBoxIcon fontSize="medium" />, path: "/create" },
+        { name: "Profile", icon: <AccountCircleIcon fontSize="medium" />, path: "/profile" },
+    ];
+    const { logout } = useContext(AuthContext)
     return (
         <div className='fixed top-0 left-0 h-screen w-64 border-r border-gray-300 bg-whitep-5 flex-col'>
             {/* instagram logo Text */}

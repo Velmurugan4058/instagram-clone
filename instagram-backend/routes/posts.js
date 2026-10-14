@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Post = require('../post');//imoprt the post blueprint
+const Post = require('../modules/post');//imoprt the post blueprint
 
 router.post('/add', async (req, res) => {
     try {
